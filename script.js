@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('language-dropdown').addEventListener('change', function() {
         var language = this.value;
-        // Perform action based on the selected language
-        // For example, redirect to a different language version of the site
+        // Include the repository name in the redirect path
+        var basePath = '/testtemp/'; // Repository name as the base path
         if(language === 'en') {
-            window.location.href = 'html_en';
+            window.location.href = basePath + 'html_en';
         } else if(language === 'fi') {
-            window.location.href = 'html_fi';
+            window.location.href = basePath + 'html_fi';
         } else if(language === 'sv') {
-            window.location.href = 'html_sv';
+            window.location.href = basePath + 'html_sv';
         }
     });
 });
