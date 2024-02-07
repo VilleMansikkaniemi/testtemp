@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+#mainContent {
+    margin-bottom: 20px;
+}
+
+#additionalContent {
+    display: flex;
+    align-items: center;
+}
+
+#additionalContent img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
