@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="banner-image.jpg" alt="Banner Image" id="bannerImage">
+    </header>
+    <main>
+        <section id="mainContent">
+            <p>This is the main block of text that contains information about the webpage's main topic.</p>
+        </section>
+        <section id="additionalContent">
+            <img src="additional-image.jpg" alt="Additional Image" id="additionalImage">
+            <p>This is an additional block of text that is placed next to the picture at the bottom of the webpage.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
