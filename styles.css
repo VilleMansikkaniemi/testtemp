@@ -1,27 +1,83 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff; /* Very light grey */
 }
 
 header img {
-    width: 100%;
+    display: block;
+    max-height: 300px;
+    width: auto; /* Allows the image to maintain its aspect ratio */
+    max-width: 600px; /* Limits the image's maximum width */
     height: auto;
+    margin: 100px auto; /* Centers the image horizontally */
+    padding: 0; /* Adjust if padding is needed, but consider applying it to the container */
+    box-sizing: border-box;
+    animation: fadeIn 2s ease-out forwards;
+    
+    
 }
 
-main {
-    padding: 20px;
+main, .main-container {
+    max-width: 800px; /* Align this with the banner image's max-width for consistent centering */
+    margin: 0 auto; /* Ensures centering */
+    padding: 50px; /* Adjust as necessary, ensuring it doesn't push content off-center */
+    box-sizing: border-box;
 }
 
-#mainContent {
-    margin-bottom: 20px;
+.language-selector {
+    margin: 20px 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#language-dropdown {
+    padding: 8px;
+    margin-left: 80%;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#mainContent, #additionalContent {
+    margin: 20px 0; /* Consistent vertical spacing */
+}
+
+#mainContent, #additionalContent {
+    opacity: 0; /* Start fully transparent */
+    animation: slideFadeIn 1s ease-out forwards;
+    animation-delay: 1s; /* Starts this animation after the header image */
 }
 
 #additionalContent {
+    margin-top: 50px;
     display: flex;
     align-items: center;
 }
 
 #additionalContent img {
+    margin-top: 50px;
+    margin-left: 50px;
     width: 200px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 20px; /* Adjusted for consistent spacing */
 }
