@@ -1,21 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('language-dropdown').addEventListener('change', function() {
         var language = this.value;
-
-        // Dynamically construct the base path to include the repository name
-        var host = window.location.hostname;
-        var protocol = window.location.protocol;
-        var pathname = window.location.pathname; // Includes '/testtemp/' when on GitHub Pages
-        var segments = pathname.split('/').filter(Boolean); // Remove empty segments
-        var basePath = protocol + '//' + host + '/' + (segments.length ? segments[0] + '/' : ''); // Assumes the project is in the first segment
-        
-        // Redirect based on selected language
+        // Perform action based on the selected language
+        // For example, redirect to a different language version of the site
         if(language === 'en') {
-            window.location.href = basePath + 'html_en';
+            window.location.href = '/html_en';
         } else if(language === 'fi') {
-            window.location.href = basePath + 'html_fi';
+            window.location.href = '/html_fi';
         } else if(language === 'sv') {
-            window.location.href = basePath + 'html_sv';
+            window.location.href = '/html_sv';
         }
     });
 });
