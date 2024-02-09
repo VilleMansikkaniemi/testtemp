@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // Perform action based on the selected language
         // For example, redirect to a different language version of the site
         if(language === 'en') {
-            window.location.href = 'html_en';
+            window.location.href = window.location.origin + "/testtemp/en_html"
         } else if(language === 'fi') {
-            window.location.href = 'html_fi';
+            window.location.href = window.location.origin + "/testtemp/html_fi";
         } else if(language === 'sv') {
-            window.location.href = 'html_sv';
+            window.location.href = window.location.origin + "/testtemp/html_sv";
         }
     });
 });
