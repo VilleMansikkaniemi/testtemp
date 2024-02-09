@@ -42,7 +42,7 @@ header img {
     max-width: 600px; /* Limits the image's maximum width */
     height: auto;
     margin: 100px auto 50px; /* Centers the image horizontally */
-    padding: 0; /* Adjust if padding is needed, but consider applying it to the container */
+    padding: 20px; /* Adjust if padding is needed, but consider applying it to the container */
     box-sizing: border-box;
     animation: fadeIn 2s ease-out forwards;
     
