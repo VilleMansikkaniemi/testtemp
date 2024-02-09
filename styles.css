@@ -87,6 +87,10 @@ main, .main-container {
     margin-top: 50px;
 }
 
+#disclaimer {
+    color: #969696;
+}
+
 /* CSS Media Query for Mobile Devices */
 @media (max-width: 768px) { /* Adjusts for screens up to 768px wide, typical for tablets and mobile devices */
     #additionalContent {
