@@ -15,13 +15,13 @@
 }
 
 a {
-    color: F04283;
+    color: #F04283;
     transition: color 0.3s ease;
     text-decoration: none; /* Optional: remove underline */
 }
 
 a:hover {
-    color: F97FAD; /* Example hover color */
+    color: #F97FAD; /* Example hover color */
     text-decoration: underline;
 }
 
